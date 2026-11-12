@@ -1,42 +1,40 @@
-Calculateur d'IMC (niveau Avancé)
+# BMI Calculator (Advanced Level)
 
-Projet Oasis Infobyte SIP – Python Programming – Task 2.
+**Oasis Infobyte SIP – Python Programming – Task 2** project[span_0](start_span)[span_0](end_span).
 
-Application de bureau en tkinter qui calcule l'indice de masse corporelle (IMC), enregistre l'historique de chaque utilisateur dans une base SQLite et affiche l'évolution de l'IMC avec matplotlib.
+A desktop application built with **tkinter** that calculates Body Mass Index (BMI), saves each user's history in a SQLite database, and visualizes BMI trends over time using `matplotlib`.
 
-Fonctionnalités
-Interface graphique (aucune ligne de commande)
-Champs avec étiquettes : utilisateur, poids (kg), taille (m) + bouton Calculer
-Formule : IMC = poids / taille², résultat arrondi à 2 décimales
-Catégories avec couleurs :
-< 18.5 : Maigreur (bleu)
-18.5 – 24.9 : Normal (vert)
-25 – 29.9 : Surpoids (orange)
-≥ 30 : Obésité (rouge)
-Validation : champs vides, texte non numérique, valeurs négatives ou irréalistes (la virgule décimale est acceptée)
-Multi-utilisateurs : chaque nom a son propre historique
-Historique stocké dans bmi_records.db (SQLite)
-Graphique de la tendance de l'IMC dans le temps, avec zones colorées par catégorie
-Gestion des erreurs de lecture/écriture de la base (boîtes de dialogue)
-Installation
+## Features
+
+- Graphical User Interface (no command line)
+- Labeled input fields: username, weight (kg), height (m) + **Calculate** button
+- Formula: $\text{BMI} = \text{weight} / \text{height}^2$, result rounded to 2 decimal places
+- Color-coded categories:
+  - $< 18.5$: Underweight (Blue)
+  - $18.5 – 24.9$: Normal (Green)
+  - $25 – 29.9$: Overweight (Orange)
+  - $\geq 30$: Obesity (Red)
+- Validation: handles empty fields, non-numeric text, negative or unrealistic values (decimal commas are accepted)
+- Multi-user support: each name maintains its own history
+- History stored in `bmi_records.db` (SQLite)
+- Graphical trend chart of BMI over time with color-coded category zones
+- Error handling for database read/write operations via dialog boxes
+
+## Installation
+
 bash
 pip install -r requirements.txt
-
-tkinter est inclus avec Python (sous Linux : sudo apt install python3-tk).
-
-Lancer
-bash
+Run
 python bmi_calculator.py
-Utilisation
-Tapez un nom d'utilisateur (ou choisissez-en un existant).
-Entrez le poids et la taille, puis cliquez sur Calculer.
-L'historique s'affiche en bas. Cliquez sur Voir le graphique pour la courbe.
+Usage
+Type a username (or select an existing one).
+Enter your weight and height, then click Calculate.
+The history is displayed at the bottom. Click View Chart to see the trend graph.
 Structure
 Python-Task2-BMICalculator/
 ├── bmi_calculator.py
 ├── requirements.txt
 ├── README.md
-└── screenshots/   (ajoutez vos captures d'écran ici)
-Auteur
-
-Lopamba Vodieu Vodieu – Stagiaire Python, Oasis Infobyte
+└── screenshots/   (add your screenshots here)
+Author
+Lopamba Vodieu Vodieu – Python Intern, Oasis Infobyte  
