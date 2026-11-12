@@ -1,48 +1,34 @@
-# Générateur de mots de passe (niveau Avancé)
+# Password Generator (Advanced Level)
 
-Projet **Oasis Infobyte SIP – Python Programming – Task 3**.
+**Oasis Infobyte SIP – Python Programming – Task 3** project[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span).
 
-Application de bureau en **tkinter** qui génère des mots de passe aléatoires et sécurisés avec le module `secrets`.
+A desktop application built with **tkinter** that generates random and secure passwords using the `secrets` module[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span).
 
-## Fonctionnalités
+## Features
 
-- Interface graphique : curseur et spinbox pour la longueur (8 à 64), cases à cocher pour les types de caractères
-- Module `secrets` (et non `random`) pour une génération cryptographiquement sûre
-- Sécurité : au moins un caractère de chaque type sélectionné est garanti, puis le mot de passe est mélangé de façon sécurisée
-- Indicateur de force (Faible / Moyen / Fort) avec barre colorée, basé sur l'entropie estimée
-- Copie automatique dans le presse-papiers à chaque génération (`pyperclip`) + bouton **Copier**
-- Option pour exclure les caractères ambigus : `0 O o 1 l I |`
-- Historique des 5 derniers mots de passe, **conservé en mémoire uniquement** (jamais écrit sur le disque)
-- Validation : longueur minimale 8, au moins 2 types de caractères, entrée numérique obligatoire
+- Graphical User Interface: slider and spinbox for length control (8 to 64), checkboxes for character types[span_6](start_span)[span_6](end_span)[span_7](start_span)[span_7](end_span)
+- Uses the `secrets` module (instead of `random`) for cryptographically secure generation[span_8](start_span)[span_8](end_span)
+- Security: guarantees at least one character from each selected type, then securely shuffles the password[span_9](start_span)[span_9](end_span)
+- Strength Indicator (Weak / Medium / Strong) with a colored bar, based on estimated entropy[span_10](start_span)[span_10](end_span)
+- Automatic copy to clipboard on generation (`pyperclip`) + **Copy** button[span_11](start_span)[span_11](end_span)
+- Option to exclude ambiguous characters: `0 O o 1 l I |`[span_12](start_span)[span_12](end_span)
+- History of the last 5 generated passwords, **kept in memory only** (never written to disk)[span_13](start_span)[span_13](end_span)
+- Validation: minimum length of 8, at least 2 character types required, mandatory numeric input[span_14](start_span)[span_14](end_span)[span_15](start_span)[span_15](end_span)
 
 ## Installation
 
 ```bash
 pip install -r requirements.txt
-```
-
-tkinter est inclus avec Python (Linux : `sudo apt install python3-tk`). Si `pyperclip` n'est pas disponible, l'application utilise le presse-papiers de tkinter.
-
-## Lancer
-
-```bash
+Tkinter is included with Python (Linux: sudo apt install python3-tk). If pyperclip is not available, the application falls back to the Tkinter clipboard.
+Run
 python password_generator.py
-```
-
-## Confidentialité
-
-Aucun mot de passe n'est enregistré dans un fichier ni envoyé sur le réseau. L'historique disparaît à la fermeture de l'application.
-
-## Structure
-
-```
+Privacy
+No passwords are saved to a file or sent over the network. The history disappears when the application is closed.
+Structure
 Python-Task3-PasswordGenerator/
 ├── password_generator.py
 ├── requirements.txt
 ├── README.md
 └── screenshots/
-```
-
-## Auteur
-
-Lopamba Vodieu Vodieu – Stagiaire Python, Oasis Infobyte
+Author
+Lopamba Vodieu Vodieu – Python Intern, Oasis Infobyte  
